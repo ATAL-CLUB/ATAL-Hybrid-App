@@ -1,5 +1,16 @@
-/**/
+
 #pic_container{
     text-align: center;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Backgrounds*/
+#mypage{
+     background: linear-gradient(to bottom right, #f2f2f2, #002060);
 }
 
