@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html ng-app="myApp">
+<html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -37,7 +37,7 @@
 
   </script>
 </head>
-<body>
+<body ng-app="myApp">
   <ons-splitter>
     <ons-splitter-side id="menu" side="left" width="220px" collapse swipeable>
       <ons-page>
@@ -100,6 +100,7 @@
   </ons-template>
     
   <ons-template id="map.html">
+      <ons-navigator ng-controller="MapController">
   <ons-page>
     <ons-toolbar>
       <div class="left">
@@ -124,6 +125,7 @@
             </ons-button>
         </p> 
   </ons-page>
+      </ons-navigator>
   </ons-template>
     
   <ons-template id="settings.html">
