@@ -1,16 +1,21 @@
 <!DOCTYPE HTML>
-<html>
+<html ng-app="myApp">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta http-equiv="Content-Security-Policy" content="default-src * data:; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
   <script src="components/loader.js"></script>
   <script src="lib/onsenui/js/onsenui.min.js"></script>
-
   <link rel="stylesheet" href="components/loader.css">
   <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
   <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
   <link rel="stylesheet" href="css/style.css">
+    
+    <script type="text/javascript"
+ src="https://maps.googleapis.com/maps/api/js">
+        </script>
+        <script src="scripts/controller.js"></script>
+    
 
   <script>
     ons.ready(function() {
@@ -39,6 +44,9 @@
         <ons-list>
           <ons-list-item onclick="fn.load('home.html')" tappable>
             Home
+          </ons-list-item>
+          <ons-list-item onclick="fn.load('map.html')" tappable>
+            Map
           </ons-list-item>
           <ons-list-item onclick="fn.load('settings.html')" tappable>
             Settings
@@ -72,7 +80,7 @@
         
         <div id="pic_container" >
          <div class="btn-group" style="margin-top: 30px">
-            <input type="image" src="../www/lib/img/uwlmap.png" alt="Submit" width="90" height="90">
+            <input type="image" src="../www/lib/img/uwlmap.png" alt="Submit" width="90" height="90" onclick="fn.load('map.html')">
             <input type="image" src="../www/lib/img/bus_info.png" alt="Submit" width="90" height="90">
             <input type="image" src="../www/lib/img/library.png" alt="Submit" width="90" height="90">
         </div>
@@ -90,7 +98,34 @@
         
     </ons-page>
   </ons-template>
-
+    
+  <ons-template id="map.html">
+  <ons-page>
+    <ons-toolbar>
+      <div class="left">
+        <ons-toolbar-button onclick="fn.open()">
+          <ons-icon icon="ion-navicon, material:md-menu"></ons-icon>
+        </ons-toolbar-button>
+      </div>
+      <div class="center">
+        Map
+      </div>
+    </ons-toolbar>
+      <div id="map_canvas"></div>
+      <p class="par-search">
+            <input type="search" class="search-input search-input-map">
+        </p>
+      <p class="par-buttons">
+            <ons-button  class="btn-delete" ng-click="deleteAllMarkers()">
+                Delete all markers        
+            </ons-button>
+            <ons-button class="btn-distance" ng-click="calculateDistance()">
+                Distance      
+            </ons-button>
+        </p> 
+  </ons-page>
+  </ons-template>
+    
   <ons-template id="settings.html">
   <ons-page>
     <ons-toolbar>
@@ -105,7 +140,7 @@
     </ons-toolbar>
   </ons-page>
   </ons-template>
-
+    
   <ons-template id="about.html">
   <ons-page>
     <ons-toolbar>
@@ -120,6 +155,7 @@
     </ons-toolbar>
   </ons-page>
   </ons-template>
+    
 
 </body>
 </html>
