@@ -13,6 +13,12 @@
      background: -webkit-linear-gradient(left top, #f2f2f2, #002060);
 }
 
+#mylibrarypage .page__background{
+     background: -webkit-linear-gradient(left top, #f2f2f2, #002060);
+}
+
+
+
 /*Map CSS*/
 #map_canvas {
     position: absolute; 

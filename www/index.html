@@ -93,7 +93,7 @@
         <img type="image" src="../www/lib/img/my_image.png"  width="50" height="50" align="middle" class="center" style="margin-top: 20px">
         
         <div id="pic_container" >
-         <div class="btn-group" style="margin-top: 30px">
+         <div class="btn-group" style="margin-top: 10px">
             <input type="image" src="../www/lib/img/uwlmap.png" alt="Submit" width="90" height="90" onclick="fn.load('map.html')">
             <input type="image" src="../www/lib/img/bus_info.png" alt="Submit" width="90" height="90" onclick="fn.load('shuttle_bus.html')">
             <input type="image" src="../www/lib/img/library.png" alt="Submit" width="90" height="90" onclick="fn.load('library.html')">
@@ -109,7 +109,7 @@
             <input type="image" src="../www/lib/img/bot_icon.png" alt="Submit" width="90" height="90" onclick="fn.load('UWL_Bot.html')">
         </div>
             </div>
-        
+    
     </ons-page>
   </ons-template>
     
@@ -142,18 +142,7 @@
         Map
       </div>
     </ons-toolbar>
-      <div id="map_canvas"></div>
-      <p class="par-search">
-            <input type="search" class="search-input search-input-map">
-        </p>
-      <p class="par-buttons">
-            <ons-button  class="btn-delete" ng-click="deleteAllMarkers()">
-                Delete all markers        
-            </ons-button>
-            <ons-button class="btn-distance" ng-click="calculateDistance()">
-                Distance      
-            </ons-button>
-        </p> 
+      
   </ons-page>
       </ons-navigator>
   </ons-template>
@@ -220,7 +209,7 @@
   </ons-template>
     
   <ons-template id="library.html">
-  <ons-page>
+  <ons-page id="mylibrarypage">
       
     <ons-toolbar>
       <div class="left">
@@ -232,6 +221,22 @@
         Library
       </div>
     </ons-toolbar>
+      
+      <img src="lib/img/library_help_desk.jpg" align="middle" class="center" style="margin-top: 20px"/>
+      
+      <img src="lib/img/librarynewsbutton.png" align="middle" class="center" style="margin-top: 10px" width="70" height="70"/>
+      
+      <div id="pic_container" >
+         <div class="btn-group" style="margin-top: 15px">
+            <input type="image" src="../www/lib/img/searcheresourcesbutton.png" alt="Submit" width="70" height="70" onclick="">
+            <input type="image" src="../www/lib/img/floorplansbutton.png" alt="Submit" width="70" height="70" onclick="">
+        </div>
+        <div class="btn-group" style="margin-top: 10px">
+            <input type="image" src="../www/lib/img/openinghours.png" alt="Submit" width="70" height="70" onclick="">
+            <input type="image" src="../www/lib/img/helpbutton.png" alt="Submit" width="70" height="70" onclick="">
+        </div>
+      </div>
+      
   </ons-page>
   </ons-template>
      
@@ -281,8 +286,6 @@
     </p>
   </ons-page>
 </ons-template>
-      
-      
       
   </ons-page>
   </ons-template>
