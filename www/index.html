@@ -125,25 +125,7 @@
         Shuttle Bus
       </div>
     </ons-toolbar> 
-      
-    <ons-carousel swipeable overscrollable auto-scroll fullscreen var="carousel">
-    <ons-carousel-item style="background-color: gray;">
-      <div class="item-label">GRAY</div>
-    </ons-carousel-item>
-    <ons-carousel-item style="background-color: #085078;">
-      <div class="item-label">BLUE</div>
-    </ons-carousel-item>
-    <ons-carousel-item style="background-color: #373B44;">
-      <div class="item-label">DARK</div>
-    </ons-carousel-item>
-    <ons-carousel-item style="background-color: #D38312;">
-      <div class="item-label">ORANGE</div>
-    </ons-carousel-item>
-    <ons-carousel-cover>
-      <div class="cover-label">Swipe left or right</div>
-    </ons-carousel-cover>
-  </ons-carousel>
-      
+
   </ons-page>
   </ons-template>
     
@@ -268,16 +250,18 @@
     </ons-toolbar>
       
     <ons-tabbar>
-  <ons-tab label="Tab 1" page="tab1.html" active>
+  <ons-tab label="Apple Wifi" page="tab1.html" active>
   </ons-tab>
-  <ons-tab label="Tab 2" page="tab2.html">
+  <ons-tab label="Android Wifi" page="tab2.html">
+  </ons-tab>
+  <ons-tab label="Laptop Wifi" page="tab3.html">
   </ons-tab>
 </ons-tabbar>
 
 <ons-template id="tab1.html">
   <ons-page>
     <p style="text-align: center;">
-      This is the first page.
+      This is the apple wifi page.
     </p>
   </ons-page>
 </ons-template>
@@ -285,7 +269,15 @@
 <ons-template id="tab2.html">
   <ons-page>
     <p style="text-align: center;">
-      This is the second page.
+      This is the android wifi page.
+    </p>
+  </ons-page>
+</ons-template>
+      
+<ons-template id="tab3.html">
+  <ons-page>
+    <p style="text-align: center;">
+      This is the laptop wifi page.
     </p>
   </ons-page>
 </ons-template>
@@ -308,6 +300,24 @@
         Information 
       </div>
     </ons-toolbar>
+      
+      <ons-carousel swipeable overscrollable auto-scroll fullscreen var="carousel">
+    <ons-carousel-item style="background-color: gray;">
+      <div class="item-label">GRAY</div>
+    </ons-carousel-item>
+    <ons-carousel-item style="background-color: #085078;">
+      <div class="item-label">BLUE</div>
+    </ons-carousel-item>
+    <ons-carousel-item style="background-color: #373B44;">
+      <div class="item-label">DARK</div>
+    </ons-carousel-item>
+    <ons-carousel-item style="background-color: #D38312;">
+      <div class="item-label">ORANGE</div>
+    </ons-carousel-item>
+    <ons-carousel-cover>
+      <div class="cover-label">Swipe left or right</div>
+    </ons-carousel-cover>
+  </ons-carousel>
   </ons-page>
   </ons-template>
       
