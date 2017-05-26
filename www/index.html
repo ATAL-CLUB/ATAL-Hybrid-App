@@ -6,6 +6,7 @@
   <meta http-equiv="Content-Security-Policy" content="default-src * data:; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
   <script src="components/loader.js"></script>
   <script src="lib/onsenui/js/onsenui.min.js"></script>
+  
   <link rel="stylesheet" href="components/loader.css">
   <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
   <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
@@ -13,6 +14,7 @@
     
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
     <script type="text/javascript" src="scripts/controller.js"></script>
+    
 
   <script>
     ons.ready(function() {
@@ -31,8 +33,11 @@
         .load(page)
         .then(menu.close.bind(menu));
     };
-
+      
+//    carousel
+    ons.bootstrap();
   </script>
+    
 </head>
 <body >
   <ons-splitter>
@@ -119,7 +124,26 @@
       <div class="center">
         Shuttle Bus
       </div>
-    </ons-toolbar>
+    </ons-toolbar> 
+      
+    <ons-carousel swipeable overscrollable auto-scroll fullscreen var="carousel">
+    <ons-carousel-item style="background-color: gray;">
+      <div class="item-label">GRAY</div>
+    </ons-carousel-item>
+    <ons-carousel-item style="background-color: #085078;">
+      <div class="item-label">BLUE</div>
+    </ons-carousel-item>
+    <ons-carousel-item style="background-color: #373B44;">
+      <div class="item-label">DARK</div>
+    </ons-carousel-item>
+    <ons-carousel-item style="background-color: #D38312;">
+      <div class="item-label">ORANGE</div>
+    </ons-carousel-item>
+    <ons-carousel-cover>
+      <div class="cover-label">Swipe left or right</div>
+    </ons-carousel-cover>
+  </ons-carousel>
+      
   </ons-page>
   </ons-template>
     
@@ -242,6 +266,32 @@
         UWL Wifi
       </div>
     </ons-toolbar>
+      
+    <ons-tabbar>
+  <ons-tab label="Tab 1" page="tab1.html" active>
+  </ons-tab>
+  <ons-tab label="Tab 2" page="tab2.html">
+  </ons-tab>
+</ons-tabbar>
+
+<ons-template id="tab1.html">
+  <ons-page>
+    <p style="text-align: center;">
+      This is the first page.
+    </p>
+  </ons-page>
+</ons-template>
+
+<ons-template id="tab2.html">
+  <ons-page>
+    <p style="text-align: center;">
+      This is the second page.
+    </p>
+  </ons-page>
+</ons-template>
+      
+      
+      
   </ons-page>
   </ons-template>
         
