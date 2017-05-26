@@ -11,11 +11,8 @@
   <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
   <link rel="stylesheet" href="css/style.css">
     
-    <script type="text/javascript"
- src="https://maps.googleapis.com/maps/api/js">
-        </script>
-        <script src="scripts/controller.js"></script>
-    
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript" src="scripts/controller.js"></script>
 
   <script>
     ons.ready(function() {
@@ -37,7 +34,7 @@
 
   </script>
 </head>
-<body ng-app="myApp">
+<body >
   <ons-splitter>
     <ons-splitter-side id="menu" side="left" width="220px" collapse swipeable>
       <ons-page>
@@ -45,14 +42,26 @@
           <ons-list-item onclick="fn.load('home.html')" tappable>
             Home
           </ons-list-item>
+          <ons-list-item onclick="fn.load('shuttle_bus.html')" tappable>
+            Shuttle Bus
+          </ons-list-item>
           <ons-list-item onclick="fn.load('map.html')" tappable>
             Map
+          </ons-list-item>
+          <ons-list-item onclick="fn.load('events.html')" tappable>
+            Events
           </ons-list-item>
           <ons-list-item onclick="fn.load('settings.html')" tappable>
             Settings
           </ons-list-item>
           <ons-list-item onclick="fn.load('about.html')" tappable>
-            About
+            About Us
+          </ons-list-item>
+          <ons-list-item onclick="fn.load('UWL_Bot.html')" tappable>
+           UWL Bot 
+          </ons-list-item>
+          <ons-list-item onclick="fn.load('library.html')" tappable>
+            Library 
           </ons-list-item>
         </ons-list>
       </ons-page>
@@ -99,6 +108,21 @@
     </ons-page>
   </ons-template>
     
+  <ons-template id="shuttle_bus.html">
+  <ons-page>
+    <ons-toolbar>
+      <div class="left">
+        <ons-toolbar-button onclick="fn.open()">
+          <ons-icon icon="ion-navicon, material:md-menu"></ons-icon>
+        </ons-toolbar-button>
+      </div>
+      <div class="center">
+        Shuttle Bus
+      </div>
+    </ons-toolbar>
+  </ons-page>
+  </ons-template>
+    
   <ons-template id="map.html">
       <ons-navigator ng-controller="MapController">
   <ons-page>
@@ -128,6 +152,21 @@
       </ons-navigator>
   </ons-template>
     
+  <ons-template id="events.html">
+  <ons-page>
+    <ons-toolbar>
+      <div class="left">
+        <ons-toolbar-button onclick="fn.open()">
+          <ons-icon icon="ion-navicon, material:md-menu"></ons-icon>
+        </ons-toolbar-button>
+      </div>
+      <div class="center">
+        Events
+      </div>
+    </ons-toolbar>
+  </ons-page>
+  </ons-template>
+    
   <ons-template id="settings.html">
   <ons-page>
     <ons-toolbar>
@@ -153,6 +192,102 @@
       </div>
       <div class="center">
         About
+      </div>
+    </ons-toolbar>
+  </ons-page>
+  </ons-template>
+    
+  <ons-template id="UWL_Bot.html">
+  <ons-page>
+      
+    <ons-toolbar>
+      <div class="left">
+        <ons-toolbar-button onclick="fn.open()">
+          <ons-icon icon="ion-navicon, material:md-menu"></ons-icon>
+        </ons-toolbar-button>
+      </div>
+      <div class="center">
+        UWL Bot
+      </div>
+    </ons-toolbar>
+  </ons-page>
+  </ons-template>
+    
+  <ons-template id="library.html">
+  <ons-page>
+      
+    <ons-toolbar>
+      <div class="left">
+        <ons-toolbar-button onclick="fn.open()">
+          <ons-icon icon="ion-navicon, material:md-menu"></ons-icon>
+        </ons-toolbar-button>
+      </div>
+      <div class="center">
+        Libaray
+      </div>
+    </ons-toolbar>
+  </ons-page>
+  </ons-template>
+     
+  <ons-template id="wifi.html">
+  <ons-page>
+      
+    <ons-toolbar>
+      <div class="left">
+        <ons-toolbar-button onclick="fn.open()">
+          <ons-icon icon="ion-navicon, material:md-menu"></ons-icon>
+        </ons-toolbar-button>
+      </div>
+      <div class="center">
+        UWL Wifi
+      </div>
+    </ons-toolbar>
+  </ons-page>
+  </ons-template>
+        
+  <ons-template id="info.html">
+  <ons-page>
+      
+    <ons-toolbar>
+      <div class="left">
+        <ons-toolbar-button onclick="fn.open()">
+          <ons-icon icon="ion-navicon, material:md-menu"></ons-icon>
+        </ons-toolbar-button>
+      </div>
+      <div class="center">
+        Information 
+      </div>
+    </ons-toolbar>
+  </ons-page>
+  </ons-template>
+      
+  <ons-template id="contacts.html">
+  <ons-page>
+      
+    <ons-toolbar>
+      <div class="left">
+        <ons-toolbar-button onclick="fn.open()">
+          <ons-icon icon="ion-navicon, material:md-menu"></ons-icon>
+        </ons-toolbar-button>
+      </div>
+      <div class="center">
+        UWL Contacts 
+      </div>
+    </ons-toolbar>
+  </ons-page>
+  </ons-template>
+      
+  <ons-template id="food.html">
+  <ons-page>
+      
+    <ons-toolbar>
+      <div class="left">
+        <ons-toolbar-button onclick="fn.open()">
+          <ons-icon icon="ion-navicon, material:md-menu"></ons-icon>
+        </ons-toolbar-button>
+      </div>
+      <div class="center">
+        UWL Food
       </div>
     </ons-toolbar>
   </ons-page>
