@@ -126,9 +126,44 @@
         Shuttle Bus
       </div>
     </ons-toolbar> 
+      
+<ons-tabbar>
+  <ons-tab label="Info" page="shuttle_bus_info_tab.html" active>
+  </ons-tab>
+  <ons-tab label="Live Times" page="shuttle_bus_live_times_tab.html">
+  </ons-tab>
+</ons-tabbar>
+
+<ons-template id="shuttle_bus_info_tab.html">
+  <ons-page >
+    <p>The university provides a free shuttle bus service for students and staff between Ealing Broadway station and our Brentford site.</p>
+    <p>The service operates a circular route, stopping at:</p>
+      <ul>
+          <li>Brentford site Paragon</li>
+          <li>Little Ealing Lane - for Student Village housing in South Ealing</li>
+          <li>South Ealing underground station</li>
+          <li>Warwick Road (UWL Main Campus)</li>
+          <li>Bond Street (Bus Stop N)</li>
+          <li>Ealing Broadway Centre (Bus Stop L)</li>
+          <li>Haven Green (Bus Stop D) - for Ealing Broadway station and Villiers House</li>
+      </ul>
+      <p>At Brentford, there is an on-campus bus stop located at Paragon House for the shuttle service.</p>
+      <p>It is required that you have a university ID to access the shuttle bus service.</p>
+      <p>Visitors to the University of West London should carry a letter of authorisation or a visitors pass to be able to use the service.</p>
+  </ons-page>
+</ons-template>
+
+<ons-template id="shuttle_bus_live_times_tab.html">
+  <ons-page>
+    <p style="text-align: center;">
+      This is the Shuttle bus live times tab.
+    </p>
+  </ons-page>
+</ons-template>
+      
 
   </ons-page>
-  </ons-template>
+ </ons-template>
     
   <ons-template id="map.html">
   <ons-page>
