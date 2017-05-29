@@ -8,6 +8,11 @@
     margin: auto;
 }
 
+
+#shuttle_info_page li{
+    font-size: 12px;
+}
+
 /*Backgrounds*/
 #mypage .page__background{
      background: -webkit-linear-gradient(left top, #f2f2f2, #002060);
