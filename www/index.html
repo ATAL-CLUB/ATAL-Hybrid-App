@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
   <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
   <link rel="stylesheet" href="css/style.css">
+    <script src="scripts/carousel.js"></script>
     
   <script>
     ons.ready(function() {
@@ -31,7 +32,7 @@
     };
       
 //    carousel
-    //ons.bootstrap();
+    ons.bootstrap();
       
   </script>
     
@@ -335,25 +336,29 @@
       </div>
     </ons-toolbar>
       
-      <ons-carousel swipeable overscrollable auto-scroll fullscreen var="carousel">
-    <ons-carousel-item style="background-color: gray;">
-      <div class="item-label">GRAY</div>
-    </ons-carousel-item>
+        <ons-carousel fullscreen swipeable auto-scroll overscrollable id="carousel">
     <ons-carousel-item style="background-color: #085078;">
-      <div class="item-label">BLUE</div>
+      <div style="text-align: center; font-size: 30px; margin-top: 20px; color: #fff;">
+        BLUE
+      </div>
     </ons-carousel-item>
     <ons-carousel-item style="background-color: #373B44;">
-      <div class="item-label">DARK</div>
+      <div style="text-align: center; font-size: 30px; margin-top: 20px; color: #fff;">
+        DARK
+      </div>
     </ons-carousel-item>
     <ons-carousel-item style="background-color: #D38312;">
-      <div class="item-label">ORANGE</div>
+      <div style="text-align: center; font-size: 30px; margin-top: 20px; color: #fff;">
+        ORANGE
+      </div>
     </ons-carousel-item>
-    <ons-carousel-cover>
-      <div class="cover-label">Swipe left or right</div>
-    </ons-carousel-cover>
   </ons-carousel>
-  </ons-page>
-  </ons-template>
+      
+      
+      </ons-page>
+    </ons-template>
+      
+  
       
   <ons-template id="contacts.html">
   <ons-page>
@@ -365,7 +370,7 @@
         </ons-toolbar-button>
       </div>
       <div class="center">
-        UWL Contacts 
+        Contact UWL
       </div>
     </ons-toolbar>
   </ons-page>
