@@ -1,0 +1,32 @@
+ <ons-page id="mypage">
+          <ons-toolbar>
+        <div class="left" >
+            <ons-toolbar-button ng-click="slidingMenu.toggleMenu()"><ons-icon icon="bars"></ons-icon></ons-toolbar-button>
+        </div>
+        <div class="center"style="color:#002060;">
+          ATAL CLUB
+        </div>
+      </ons-toolbar>
+        
+        <img type="image" src="../www/images/uwl_log_soc.png"   height="50" align="middle" class="center" style="margin-top: 20px">
+        <img type="image" src="../www/images/my_image.png"  width="50" height="50" align="middle" class="center" style="margin-top: 20px">
+        
+        <div id="pic_container" style="text-align: center;" >
+         <div class="btn-group" style="margin-top: 30px">
+            <input type="image" src="../www/images/uwlmap.png" alt="Submit" width="90" height="90" onclick="slidingMenu.setMainPage('map.html')">
+            <input type="image" src="../www/images/bus_info.png" alt="Submit" width="90" height="90" onclick="slidingMenu.setMainPage('shuttle_bus_info.html')">
+            <input type="image" src="../www/images/library.png" alt="Submit" width="90" height="90"  onclick="fn.load('Libaray.html')">
+        </div>
+          <div class="btn-group">
+            <input type="image" src="../www/images/wifi.png" alt="Submit" width="90" height="90"  onclick="fn.load('Wifi.html')">
+            <input type="image" src="../www/images/uwlsu.png" alt="Submit" width="90" height="90" onclick="slidingMenu.setMainPage('events.html')">
+            <input type="image" src="../www/images/information.png" alt="Submit" width="90" height="90" onclick="slidingMenu.setMainPage('information.html')">
+        </div>
+          <div class="btn-group">
+            <input type="image" src="../www/images/contact.png" alt="Submit" width="90" height="90" onclick="fn.load('contacts.html')">
+            <input type="image" src="../www/images/uwl_food.png" alt="Submit" width="90" height="90" onclick="fn.load('food.html')">
+            <input type="image" src="../www/images/bot_icon.png" alt="Submit" width="90" height="90" onclick="fn.load('UWL_Bot.html')">
+        </div>
+            </div>
+        
+    </ons-page>
