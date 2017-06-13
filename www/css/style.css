@@ -121,7 +121,7 @@ ul.a{
 }
 
 .page--full_bg__background {
-    background: url('C:/Users/davidkd/Desktop/ATAL-Hybrid-App new/ATAL-Hybrid-App/www/images/test2.png')
+    background: url('https://raw.githubusercontent.com/ATAL-CLUB/ATAL-Hybrid-App/master/www/images/test2.png')
     no-repeat center ; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
