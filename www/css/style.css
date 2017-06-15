@@ -6,7 +6,25 @@
     padding: 0;   
     z-index: -1
 }
+#table_head{
+    position: fixed;
+     width: 100%;
+     background: #000;
+    color: #fff;
+}
 
+
+#main_table{
+    height: 400px;
+    margin-top: 10px;
+    overflow-y: auto;
+    width: 100%;
+    background: #fff;
+}
+
+.tcf{
+    font-size: 12px;
+}
 .search-input-map{
     width:60%;
     z-index:1;
@@ -17,7 +35,6 @@
 .par-search{
     margin-top:10%
 }
-
 .par-buttons{
     position: absolute; 
     text-align: center; 
@@ -117,6 +134,7 @@ ons-carousel-item {
 
 ul.a{
     list-style-type: square;
+   
     
 }
 
